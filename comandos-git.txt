@@ -1,0 +1,158 @@
+Jean Paul Beaudry
+
+
+#En este comando se configura para que git ponga el proxy del wifi de la UMA
+git config --global http.proxy http://proxy.wifi.uma.es:3128
+
+#En este comando se configura el nombre de usuario que se va a usar
+git config user.name beaudryjp
+
+#En este comando se configura el correo del usuario
+git config user.email jeanpaul.beaudry@gmail.com
+
+3)
+
+#En este comando se añade el fichero factorial.java a la rama master
+git add factorial.java 
+
+#En este comando se añade un commit con el fichero nuevo o modificado
+git commit -m "implementacion inicial"
+
+4)
+
+#En este comando se añade el fichero factorial.java a la rama master
+git add factorial.java
+
+#En este comando se añade un commit con el fichero nuevo o modificado
+git commit -m "refactorizacion"
+
+5)
+
+#En este comando subimos todos los commits al repositorio origin
+git push origin master
+
+#En este comando creamos un nuevo branch y cambiamos el espacio de trabajo a ella 
+git checkout -b recursivo
+
+7)
+
+#En este comando se añade el fichero factorial.java a la rama recursivo
+git add factorial.java 
+
+#En este comando se añade un commit con el fichero nuevo o modificado
+git commit -m "implementacion recursiva"
+
+#En este comando subimos todos los commits al repositorio origin
+git push origin recursivo
+
+8)
+
+#En este comando cambiamos a la rama master
+git checkout master
+
+10)
+
+#En este comando se añade el fichero factorial.java a la rama master
+git add factorial.java 
+
+#En este comando se añade un commit con el fichero nuevo o modificado
+git commit -m "correcion numeros negativos"
+
+#En este comando subimos todos los commits al repositorio origin
+git push origin master
+
+11)
+
+#En este comando cambiamos a la rama recursivo
+git checkout recursivo
+
+#En este comando se añade el fichero factorial.java a la rama recursivo
+git add factorial.java 
+
+#En este comando se añade un commit con el fichero nuevo o modificado
+git commit -m "optimizacion"
+
+12)
+
+#En este comando cambiamos a la rama master
+git checkout master
+
+#En este comando hacemos un merge de la rama recursivo y master para que mezcle los cambios de las dos ramas
+git merge recursivo
+
+13)
+
+#En este comando creamos un nuevo branch y cambiamos el espacio de trabajo a ella 
+git checkout -b refacIO
+
+14)
+
+#En este comando se añade el fichero factorial.java a la rama refacIO
+git add factorial.java 
+
+#En este comando se añade un commit con el fichero nuevo o modificado
+git commit -m "refactorizacion de metodo de entrada"
+
+15)
+
+#En este comando guardamos todos los cambios realizados en el stash para no perder los mismos y que se puede recuperar cuando sea conveniente.
+git stash
+
+#En este comando cambiamos a la rama master
+git checkout master
+
+
+16)
+
+#En este comando se añade el fichero factorial.java a la rama master
+git add factorial.java 
+
+#En este comando se añade un commit con el fichero nuevo o modificado
+git commit -m "cambio de long a BigInteger"
+
+#En este comando subimos todos los commits al repositorio origin
+git push origin master
+
+#En este comando cambiamos a la rama refacIO
+git checkout refacIO
+
+#En este comando recuperamos el contenido del stash que se guardo para que no se perdiera los cambios
+git stash pop
+
+#En este comando se añade el fichero factorial.java a la rama refacIO
+git add factorial.java 
+
+#En este comando se añade un commit con el fichero factorial.java
+git commit -m "refactorizacion de metodo de salida"
+
+17)
+
+#En este comando cambiamos a la rama master
+git checkout master
+
+#En este comando hacemos un merge de la rama refacIO y master para que mezcle los cambios de las dos ramas
+git merge refacIO
+
+19)
+
+#En este comando se añade el fichero factorial.java a la rama master
+git add factorial.java 
+
+#En este comando se añade un commit con el fichero factorial.java
+git commit -m "mezcla de rama refacIO"
+
+#En este comando subimos todos los commits al repositorio origin
+git push origin master
+
+21)
+
+#En este comando se añade el fichero factorial.java a la rama master
+git add comandos-git.txt
+
+#En este comando se añade un commit con el fichero comandos-git.txt
+git commit -m "adicion de historial de linea de comandos"
+
+22)
+
+#En este comando se suben todas las ramas al repositorio origin
+git push --all origin
